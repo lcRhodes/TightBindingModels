@@ -1,0 +1,50 @@
+&CONTROL
+    calculation = "scf"
+    max_seconds =  8.64000e+08
+    pseudo_dir = './'
+    outdir = './'
+    prefix = 'Sr214M'
+    /
+
+
+&SYSTEM
+    a                         =  3.86130e+00
+    c                         =  4.08504e+01
+    degauss                   =  1.00000e-02
+    ecutrho                   =  3.60000e+02
+    ecutwfc                   =  4.00000e+01
+    ibrav                     = 6
+    nat                       = 7
+    nspin                     = 1
+    ntyp                      = 3
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  0.00000e+00
+    starting_magnetization(2) =  0.00000e-00
+    starting_magnetization(3) =  0.00000e+00
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+K_POINTS {automatic}
+ 6  6  2  0 0 0
+
+ATOMIC_SPECIES
+Sr     87.62000  Sr.pbe-spn-kjpaw_psl.1.0.0.UPF
+Ru    101.07000  Ru.pbe-spn-kjpaw_psl.1.0.0.UPF
+O      15.99940  O.pbe-nl-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Sr      0.000000   0.000000  23.232439
+Sr      0.000000   0.000000  19.489317
+Ru      1.930650   1.930650  21.361083
+O       1.930650   0.000000  21.361083
+O       0.000000   1.930650  21.361083
+O       1.930650   1.930650  19.282206
+O       1.930650   1.930650  23.439551
