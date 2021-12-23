@@ -1,1 +1,1 @@
-Public storage repository for tight binding hamiltonians generated via Wannier90 and Quantum Espresso.
+Public storage repository for tight binding hamiltonians of quantum materials.
